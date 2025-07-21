@@ -1,0 +1,267 @@
+@charset "utf-8";
+/* CSS Document */
+html {
+  scroll-behavior: smooth;
+}
+#Contents {
+padding-top:15px;
+}
+.MMGrid1 {
+	float: left;
+	width: 180px !important;
+	margin: 0 0 0 15px;
+}
+.MMGrid1 img {
+width:100%;
+height:100%;
+}
+.hvrbox,
+.hvrbox * {
+	box-sizing: border-box;
+}
+.hvrbox {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+}
+.hvrbox img {
+	max-width: 100%;
+}
+.hvrbox_background {
+	width: 400px;
+	height: 250px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.hvrbox .hvrbox-layer_slideup {
+	-moz-transform: translateY(100%);
+	-webkit-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	transform: translateY(100%);
+}
+.hvrbox:hover .hvrbox-layer_slideup,
+.hvrbox.active .hvrbox-layer_slideup {
+	-moz-transform: translateY(0);
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0);
+}
+.prodbox {
+	width: 20%;
+	float: left;
+	padding-right: 10px;
+}
+
+.prodbox:last-child {
+padding-righ: 0px;
+}
+.hvrbox .hvrbox-layer_top {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 96%;
+	height: 100%;
+	background: rgba(7, 17, 44, 0.6);
+	color: #fff;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+	opacity: 1;
+}
+
+.hvrbox .hvrbox-text {
+	text-align: left;
+    font-size: 11px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    width: 70%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.hvrbox-text h1 {
+	font-size: 20px;
+	line-height: 22px;
+	font-weight: bold;
+	padding-bottom:10px;
+}
+.hvrbox-text a, .hvrbox-text a:link, .hvrbox-text a:visited, .hvrbox-text a:active{
+	color: white;
+	line-height: 24px;
+	font-size:10px;
+}
+.hvrbox-text a:hover {
+	background-color: #a94657;
+	padding:3px 6px;
+}
+
+.hvrbox .hvrbox-text_mobile {
+	font-size: 15px;
+	border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+	border-top: 1px solid rgba(179, 179, 179, 0.7);
+	margin-top: 5px;
+	padding-top: 2px;
+	display: none;
+}
+.hvrbox.active .hvrbox-text_mobile {
+	display: block;
+}
+
+#topbanner {
+margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.TextStyle5 {
+	font-family:'HelveticaNeueETW01-65Md', Arial, sans-serif;
+	letter-spacing: -0.01em;
+	line-height: 120%;
+	margin: 0 0 15px;
+	color:#000;
+font-size: 140%;
+}
+
+.TextStyle5 strong {
+font-size: 150%;
+line-height: 125%;
+padding-bottom:10px;
+}
+
+#DirectoryBox {
+    border: solid 1px #ccc;
+    background: #f5f5f5;
+    padding: 8px 20px;
+    margin-bottom: 20px;
+}
+
+#Directory h4 {
+    font-family: 'HelveticaNeueETW01-65Md', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 120%;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  background-color: red;
+background-image: url(/images/backtotop.png);
+background-repeat: no-repeat;
+    background-position: center;
+  color: white;
+  cursor: pointer;
+  padding: 15px 25px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+.prodrow {
+display: table;
+}
+
+.prodrow img {
+width:100%;
+}
+.Grid2.imgrow {
+padding: 0 !important;
+}
+.Grid2 {
+width:50%;
+padding:10px;
+display: table-cell; 
+}
+.prodbg {
+background-image: url(../draft/images/prodbg.jpg);
+background-repeat: no-repeat;
+        background-position: bottom right;
+padding: 10px 25px 10px 20px;
+}
+
+.prodtitle {
+background-image: url(../draft/images/prod-title.jpg);
+background-repeat: no-repeat;
+        background-position: top left;
+font-size: 140%;
+    font-weight: bold;
+    font-family: "HelveticaNeueETW01-65Md", Helvetica, Arial, sans-serif;
+    color: #1c1c1c;
+    padding: 30px 0 10px;
+line-height: 110%;
+}
+
+.prodhr {
+border-bottom : 6px solid #b0b0b0;
+padding: 0px 0 6px;
+}
+
+.TableStyle1 {
+margin-bottom: 0 !important;
+background-color: rgba(255, 255, 254, 0.8);
+}
+
+a.FindMore {
+	clear:both;
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
+	background:-moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9',GradientType=0);
+	background-color:#e9e9e9;
+
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#415668;
+	font-family:"Helvetica LT W01 Bold", Arial, Verdana;
+	font-size:13px;
+	padding:4px 18px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+a.FindMore:hover {
+		
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
+	background:-moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9',GradientType=0);
+	background-color:#f9f9f9;
+}
+a.FindMore:active {
+	position:relative;
+	top:1px;
+}
+

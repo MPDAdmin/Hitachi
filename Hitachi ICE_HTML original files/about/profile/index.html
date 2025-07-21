@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Language" content="en" />
+<meta name="viewport" content="width=1024" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="Author" content="Hitachi, Ltd." />
+<meta name="Robots" content="INDEX, FOLLOW" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta content="Air Compressor, Ink Jet Printer, Inverter, Induction Motor, Switches, Transformer, Hoist, Pumps, Blowers, Switches Circuit Breakers" name="keywords" />
+<meta content="Industrial Components and Equipment Group (ICE) provides the most appropriate solution based on various product development, engineering, sales and after-service skills." name="description" />
+<title>Company Profile : Hitachi Industrial Components &amp; Equipment</title>
+<!-- <link rel="index" href="http://www.hitachi.com/" title="Home" />
+<link rel="stylesheet" href="/css/en/r1/common.css" type="text/css" media="screen,print" />
+<link rel="stylesheet" href="/css/en/r1/print.css" type="text/css" media="print" />
+<link rel="stylesheet" href="/ice/css/ice.css" type="text/css" media="screen,print" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/js/en/r1/jquery.1.10.2.js"></script>
+<script type="text/javascript" src="/js/en/r1/common.js"></script>
+<script type="text/javascript" src="https://www.hitachi.asia/js/en/r1/header_sg_en.js"></script>--> 
+<link rel="index" href="http://www.hitachi.com/" title="Home" />
+<link rel="stylesheet" href="/css/en/r1/common.css" type="text/css" media="screen,print" />
+	<link rel="stylesheet" href="/css/en/r1/common2.css" type="text/css" media="screen,print" />
+<link rel="stylesheet" href="/css/en/r1/print.css" type="text/css" media="print" />
+<link rel="stylesheet" href="/ice/css/ice.css" type="text/css" media="screen,print" />
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
+<!-- <script type="text/javascript" src="/js/en/r1/jquery.1.10.2.js"></script>-->
+	<script type="text/javascript" src="/js/lib/jquery.js"></script>
+<script type="text/javascript" src="/js/en/r1/common.js"></script>
+<script type="text/javascript" src="https://www.hitachi.asia/js/en/r1/header_sg_en.js"></script>
+<script type="text/javascript" src="/ice/js/branding_image.js"></script>
+	<script type="text/javascript" src="/js/en/r1/common2.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="https://module.hitachi.com/search/js/sug.js#sv=//mf2aps06.marsflag.com/hitachi__RGN_SINGAPORE__result_00"></script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NWV8P6M');</script>
+<!-- End Google Tag Manager -->
+ 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-186904133-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-186904133-1');
+</script>
+
+	
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWV8P6M"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<p id="top"><a href="#body">Skip to main content</a></p>
+<!-- Header Area 1 -->
+<div id="HeaderArea1">
+	<!-- Container (Width 1275px with responsive feature) ref. Chapter 5. Container -->
+	<div class="ContainerFix">
+		<!-- Hitachi CS Logo ref. Chapter 6.3 CS Logo -->
+		<div id="Statement">
+			<a href="https://www.hitachi.co.jp/"><img src="/image/en/r1/common2/corp_id.png" alt="Hitachi"></a>
+		</div>
+	<!-- Support Navigation ref. Chapter 6.4 Support Navigation -->
+	<div id="SupportNavi" class=" SupportNaviIconText">
+		<!-- Region/Language ref. Chapter 6.4.4. Region/Langugage, Changing Language feature 
+		<button type="button" id="SupportNaviLang" aria-expanded="false" aria-controls="LangMenu"><span><img src="/image/en/r1/common2/icon_earth.png" alt="Region / Language"><span>Region / Language</span></span></button>
+		<div id="LangMenu">
+			<div class="Inner">
+				<a href="$link$" class="Current" aria-current="true">Singapore (English)</a>
+				<a href="$link$">Indonesia (Bahasa)</a>
+				<a href="$link$">Vietnam (Vietnamese)</a>
+			</div>
+		</div> -->
+		<!-- Contact Us feature ref. Chapter 6.4.3 Contact Us Feature -->
+		<a href="/ice/contact/index.html"><img src="/image/en/r1/common2/icon_mail.png" alt="Contact Us"><span>Contact Us</span></a>
+		<!-- Search feature ref. Chapter 6.4.2 Search Feature -->
+		<button type="button" id="SupportNaviSearch" aria-expanded="false" aria-controls="SearchFormArea"><span><img src="/image/en/r1/common2/icon_search.png" alt="Search"><span>Search</span></span></button>
+		<div id="SearchFormArea">
+			<div>
+				<button class="BtnClose" aria-label="Close"></button>
+				<form action="https://module.hitachi.com/search/RGN_SINGAPORE.html" method="get" accept-charset="UTF-8">
+					<input type="hidden" name="imgsize" value="3">
+					<input type="hidden" name="pagemax" value="10">
+					<div class="SearchGroup">
+						<input type="text" name="q" size="20" maxlength="40" accesskey="s" title="Search Keyword " placeholder=" Search within Hitachi" autocomplete="off" class="SearchPhrease" id="MF_form_phrase">
+					
+					<button class="SearchBtn" type="submit">Search</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+</div>
+</div>
+<!-- Header Area 2 -->
+<div id="HeaderArea2" class="Sticky">
+	<!-- Container (Width 1275px with responsive feature) ref. Chapter 5. Container -->
+	<div class="ContainerFix">
+		<!-- Site Identity ref. Chapter 6.6 Site Identity -->
+		<div id="SiteID">
+			<a href="https://www.hitachi.asia/ice"><img src="/ice/image/site_id_ice.gif" width="310" height="50" alt="Hitachi"><span>Hitachi Industrial Components &amp; Equipment</span></a>
+			<!-- <a href="https://www.hitachi.asia/"><img src="/image/en/r1/site_id_sg.gif" width="152" height="50" alt="Site Name 2"><span>Hitachi in Asia</span></a>-->
+		</div>
+<!-- Global Navigation ref. Chapter 6.7 Global Navigation -->
+		<ul id="GlobalNaviMenu">
+			<li class="DropDownMenu">
+				<button aria-expanded="false" aria-controls="DropdownMenu1"><span>Products</span></button>
+				<ul id="DropdownMenu1"><!-- When same id is used as aria-controls, the section is enabled to open and close. -->
+					<!-- Menu that has no layers and just hyperlink -->
+					<li><a href="/ice/products/index.html">All Products</a></li>
+					<li><a href="/ice/products/air_compressors/index.html">Air Compressors</a></li>
+					<li><a href="/ice/products/transformers/index.html">Amorphous Transformers</a></li>
+					<li><a href="/ice/products/hoists/index.html">Hoists</a></li>
+					<li><a href="/ice/products/inkjet_printers/index.html">Coding & Marking</a></li>
+					<li><a href="/ice/products/inverters/index.html">Inverters</a></li>
+					<li><a href="/ice/products/motors/index.html">Motors</a></li>
+					<li><a href="/ice/products/controller/index.html">Programmable Logic Controller</a></li>
+					<li><a href="/ice/products/pumps/index.html">Pumps</a></li>
+					<li><a href="/ice/products/switches_breakers/index.html">Switches & Circuit Breakers</a></li>
+					<li><a href="/ice/products/blowers/index.html">Vortex Blowers</a></li>
+				</ul>
+			</li>
+			<li><a href="/ice/services/index.html">Services</a></li>
+			<li><a href="/ice/brochures/index.html">Brochures</a></li>
+      		<li class="DropDownMenu Current" >
+				<button aria-expanded="false"  aria-controls="DropdownMenu2"><span><em>About Us</em></span></button>
+				<ul id="DropdownMenu2">
+					<li><a href="/ice/about/index.html"> Overview</a></li>
+					<li class="Current"><a href="/ice/about/profile/index.html" aria-current="page"><strong>Company Profile</strong></a></li>
+					<li><a href="/ice/about/history/index.html">History</a></li>
+				</ul>
+			</li>
+      <li><a href="/ice/news/index.html">News</a></li>
+		</ul>
+	
+</div>
+</div> <!-- End of Header -->
+
+<div id="TopicPath">
+  <ul>
+    <li class="FirstItem"><a href="/ice/index.html">Site Top</a></li>
+    <li><a href="/ice/about/index.html">About Us</a></li>
+    <li><strong>Company Profile </strong></li>
+  </ul>
+</div>
+<!-- /TopicPath -->
+
+<div id="Contents">
+  <div class="GridSet">
+    <div class="Grid3 TopBorderSet">
+      <div class="PageTitleStyle1">
+        <h1 class="Title"><a name="body" id="body">Company Profile</a></h1>
+      </div>
+      <div class="Section">
+        <div>
+          <p class="Img" style="float:left; margin-right:24px;"><img src="images/building.jpg" alt="Industrial Components and Equipment Group (ICE)" width="280" height="188" /></p>
+          <p class="TextStyle1">Industrial Components and Equipment Group (ICE) provides the most appropriate solution based on various product development, engineering, sales and after-service skills. The group is responsible for the marketing of various industrial products such as Air Compressor, Ink Jet Printer, Inverter, Induction Motor, Switches, Transformer, Hoist, and various energy saving equipments. </p>
+          <p class="TextStyle1">Our market coverage includes Singapore, Malaysia, Indonesia, Philippines, Thailand, Myanmar, Cambodia & Vietnam (South East Asia), India, Pakistan, Bangladesh, Sri Lanka & Nepal (South West Asia) and UAE, Saudi Arabia, Qatar, Kuwait, Oman, Egypt, Jordan, Syria, Lebanon & Bahrain (Middle East Countries). </p>
+          <p class="TextStyle1">Explore the  contact details below to find out more, or  send in your enquiry <a href="/ice/contact/index.html">here</a>.</p>
+          <div class="Section">
+            <div class="HorizontalInnerLinks">
+              <ul class="ClearFix">
+                <li><a href="#Singapore">Singapore</a></li>
+                <li><a href="#India">India</a></li>
+                <li><a href="#Indonesia">Indonesia</a></li>
+                <li><a href="#Malaysia">Malaysia</a></li>
+                <li><a href="#Philippines">Philippines</a></li>
+                <li><a href="#Thailand">Thailand</a></li>
+                <li><a href="#Vietnam">Vietnam</a></li>
+                <li><a href="#Others">Other Regions</a></li>
+              </ul>
+            </div>
+            <div class="Section" id="Singapore">
+              <table class="TableStyle3">
+                <caption>
+                Hitachi Asia Ltd.
+                </caption>
+              </table>
+              <h2 class="title"><span>Singapore</span></h2>
+              <table class="TableStyle3">
+                <tbody>
+                  <tr>
+                    <th scope="row">Company Name</th>
+                    <td>Hitachi Asia Ltd.<br />
+                      Industrial Components & Equipment Group</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Office Address</th>
+                    <td>30 Pioneer Crescent
+                      #10-15, West Park Bizcentral,
+                      Singapore 628560 </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Warehouse Address</th>
+                    <td>28 Pioneer Crescent
+                      #06-13, West Park Bizcentral,
+                      Singapore 628559 </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Tel</th>
+                    <td>+65 6305 7400</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Fax</th>
+                    <td>+65 6305 7401</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="Section">
+              <ul class="PageTop">
+                <li><a href="#top">page top</a></li>
+              </ul>
+            </div>
+            <!--/Section-->
+            <div class="Section" id="India">
+              <h2 class="title"><span>India</span></h2>
+              <table class="TableStyle3">
+                <caption>
+                Hitachi India Pvt. Ltd.
+                </caption>
+                <tbody>
+                  <tr>
+                    <th width="25%" scope="row">Company Name</th>
+                    <td width="75%"> Hitachi India Private Limited </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"> Address</th>
+                    <td>Ground & First Floor, Tower B, World Mark 1, Asset Number 11, Aerocity, NH-8, New Delhi-110037</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Tel</th>
+                    <td>+91 (11) 40605252</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Fax</th>
+                    <td>+91 (11) 40605253</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="TableStyle3">
+                <caption>
+                Hitachi India Pvt. Ltd.
+                </caption>
+                <tbody>
+                  <tr>
+                    <th width="25%" scope="row">Company Name</th>
+                    <td width="75%">Hitachi India Pvt. Ltd. <br />
+                      Bangalore Branch Office</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Address</th>
+                    <td>Unit 103, 1st Floor, Shah Sultan Complex, No 17, Cunningham Road, Bangalore 560 052</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Tel</th>
+                    <td> +91 (80) 2238 6986 / 987 / 984 </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Fax</th>
+                    <td> +91 (80) 2238 6988 </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="TableStyle3">
+                <caption>
+                Hitachi India Pvt. Ltd.
+                </caption>
+                <tbody>
+                  <tr>
+                    <th width="25%" scope="row">Company Name</th>
+                    <td width="75%"> Hitachi India Pvt. Ltd. <br />
+                      Mumbai Branch Office </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"> Address</th>
+                    <td>508, Ascot Center, Next to Hilton Hotel,
+                      Sahar Road, Andheri East, Mumbai 400099 </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Tel</th>
+                    <td>+91 (22) 2821 5625 </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Fax</th>
+                    <td> +91 (22) 2821 2610</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="TableStyle3">
+                <caption>
+                Hitachi India Pvt. Ltd.
+                </caption>
+                <tbody>
+                  <tr>
+                    <th width="25%" scope="row">Company Name</th>
+                    <td width="75%">Hitachi India Pvt. Ltd. <br />
+                      Chennai Branch Office</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Address</th>
+                    <td>206, Apeejay House, No.12, Haddows Road, Nungambakkam, Chennai 600 006</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Tel</th>
+                    <td> +91 (44) 2821 3108 / 3109 </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Fax</th>
+                    <td> +91 (44) 2821 3110 </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="Section">
+              <ul class="PageTop">
+                <li><a href="#top">page top</a></li>
+              </ul>
+            </div>
+            <!--/Section-->
+            
+            <div class="Section" id="Indonesia">
+              <h2 class="title"><span>Indonesia</span></h2>
+              <table class="TableStyle3">
+                <caption>
+                PT. Hitachi Asia Indonesia
+                </caption>
+                <tbody>
+                  <tr>
+                    <th width="25%" scope="row">Company Name</th>
+                    <td width="75%">PT. Hitachi Asia Indonesia </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"> Address</th>
+                    <td>International Financial Centre Tower 2<br>
+39<sup>th</sup> floor Suite #03-04, Jl. Jenderal Sudirman Kav 22-23, Jakarta Selatan, 12920</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Tel</th>
+                    <td>+62 (21) 2528 470 </td>
+                  </tr>
+                  <!--<tr>
+                    <th scope="row">Fax</th>
+                    <td>+62 (21) 2358 6755 </td>
+                  </tr>-->
+                </tbody>
+              </table>
+            </div>
+            <div class="Section">
+              <ul class="PageTop">
+                <li><a href="#top">page top</a></li>
+              </ul>
+            </div>
+            <!--/Section-->
+            
+            <div class="Section" id="Malaysia">
+              <h2 class="title"><span>Malaysia</span></h2>
+              <table class="TableStyle3">
+                <caption>
+                Hitachi Asia (M) Sdn. Bhd.
+                </caption>
+                <tbody>
+                  <tr>
+                    <th width="25%" scope="row">Company Name</th>
+                    <td width="75%">Hitachi Asia (M) Sdn. Bhd.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"> Address</th>
+                    <td>Suite 17.3, Level 17, Menara IMC, (Letter Box No.5), No.8, Jalan Sultan Ismail, 50250 Kuala Lumpur, Malaysia</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Tel</th>
+                    <td>+60 (3) 2031 8751</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Fax</th>
+                    <td>+60 (3) 2713 2855</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="Section">
+              <ul class="PageTop">
+                <li><a href="#top">page top</a></li>
+              </ul>
+            </div>
+            <!--/Section-->
+            
+            <div class="Section" id="Philippines">
+              <h2 class="title"><span>Philippines</span></h2>
+              <table class="TableStyle3">
+                <caption>
+                Hitachi Asia Ltd.
+                </caption>
+                <tbody>
+                  <tr>
+                    <th width="25%" scope="row">Company Name</th>
+                    <td width="75%">Hitachi Asia Ltd. <br />
+                      Philippine Branch</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"> Address</th>
+                    <td>Unit 8, 11th Floor Zuellig Bldg., Makati Avenue corner Paseo de Roxas, Makati City, Philippines 1225 </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Tel</th>
+                    <td>+63 (2) 886-9018 </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Fax</th>
+                    <td>+63 (2) 887-3794</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="Section">
+              <ul class="PageTop">
+                <li><a href="#top">page top</a></li>
+              </ul>
+            </div>
+            <!--/Section-->
+            
+            <div class="Section" id="Thailand">
+              <h2 class="title"><span>Thailand</span></h2>
+              <table class="TableStyle3">
+                <caption>
+                Hitachi Asia (Thailand) Co., Ltd.
+                </caption>
+                <tbody>
+                  <tr>
+                    <th width="25%" scope="row">Company Name</th>
+                    <td width="75%">Hitachi Asia (Thailand) Co., Ltd.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"> Address</th>
+                    <td>12th Floor, Ramaland Bldg., No.952 Rama IV Road, Bangrak, Bangkok 10500, Thailand</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Tel</th>
+                    <td>+66 (2) 632 9292</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Fax</th>
+                    <td>+66 (2) 632 9299</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="Section">
+              <ul class="PageTop">
+                <li><a href="#top">page top</a></li>
+              </ul>
+            </div>
+            <!--/Section-->
+            
+            <div class="Section" id="Vietnam">
+              <h2 class="title"><span>Vietnam</span></h2>
+              <table class="TableStyle3">
+                <caption>
+                Hitachi Asia Ltd.
+                </caption>
+                <tbody>
+                  <tr>
+                    <th width="25%" scope="row">Company Name</th>
+                    <td width="75%">Hitachi Asia (Vietnam) Co., Ltd. </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"> Address</th>
+                    <td>The Landmark, Room 8-9-10A, 4th Floor,
+                      5B Ton Duc Thang Street, Dist 1,
+                      Ho Chi Minh City, Vietnam </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Tel</th>
+                    <td>+84 28 3829 9725 </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Fax</th>
+                    <td>+84 28 3829 9729</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="TableStyle3">
+                <caption>
+                Hitachi Asia Ltd.
+                </caption>
+                <tbody>
+                  <tr>
+                    <th width="25%" scope="row">Company Name</th>
+                    <td width="75%">Hitachi Asia Ltd. <br />
+                      Representative Office in Hanoi </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"> Address</th>
+                    <td>Room 2301, 23th West, Lotte Center, 54 Lieu Giai street, Cong Vi ward, Ba Dinh district, Hanoi </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Tel</th>
+                    <td>+84 24 3933 3122 </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Fax</th>
+                    <td> +84 24 3933 3125 </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="Section">
+              <ul class="PageTop">
+                <li><a href="#top">page top</a></li>
+              </ul>
+            </div>
+            <!--/Section-->
+            <div class="Section" id="Others">
+              <h2 class="title"><span>Other Regions</span></h2>
+              <p class="TextStyle1">Please contact Singapore office below, or send in your enquiry <a href="/ice/contact/index.html">here</a>. </p>
+              <table class="TableStyle3">
+                <tbody>
+                  <tr>
+                    <th scope="row">Company Name</th>
+                    <td>Hitachi Asia Ltd.<br />
+                      Industrial Components & Equipment Group</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Office Address</th>
+                    <td>30 Pioneer Crescent
+                      #10-15, West Park Bizcentral,
+                      Singapore 628560 </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Warehouse Address</th>
+                    <td>28 Pioneer Crescent
+                      #06-13, West Park Bizcentral,
+                      Singapore 628559 </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Tel</th>
+                    <td>+65 6305 7400</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Fax</th>
+                    <td>+65 6305 7401</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!--/Section--> 
+          
+        </div>
+      </div>
+      <!--/Section--><!--/Section-->
+      <div class="Section">
+        <ul class="PageTop">
+          <li><a href="#top">page top</a></li>
+        </ul>
+      </div>
+      <!--/Section--> 
+    </div>
+    <!--/Grid3-->
+    
+    <div class="Grid1">
+      <div id="VerticalLocalNavi">
+        <ul>
+          <li class="FirstItem Current"><a href="/ice/about/profile/index.html"><strong>Company Profile</strong></a></li>
+          <li><a href="/ice/about/history/index.html">History</a></li>
+        </ul>
+      </div>
+      
+      <!--/Section--> 
+    </div>
+    <!--/Grid1 --> 
+    
+  </div>
+  <!--/GridSet--> 
+</div>
+<!--/ContentsArea-->
+
+<div id="FooterArea">
+	<!-- Container(width 1275px with responsive feature) ref. Chapter 5. Container -->
+	<div class="ContainerFix">
+		<a href="#top" id="FooterPageTop" aria-label="Go to page top"></a>
+		<!--Optional footer ref. Chapter 7.3. Optional Footer -->
+		<div id="Footer2">
+		<!--SNS button ref. Chapter 7.4. SNS button -->
+		<div id="SnsButton">
+			<a target="_blank" href="https://twitter.com/Hitachi" howu-index="40"><img src="/image/en/r1/common2/icon_sns_twitter.png" alt="Twitter Official Account" howu-index="39"></a>
+			<a target="_blank" href="https://www.facebook.com/HitachiAsia/?WT.ac=FM" howu-index="38"><img src="/image/en/r1/common2/icon_sns_facebook.png" alt="Facebook Official Page" howu-index="37"></a>
+			<a target="_blank" href="https://www.youtube.com/user/HitachiBrandChannel/?WT.ac=FM" howu-index="36"><img src="/image/en/r1/common2/icon_sns_youtube.png" alt="YouTube Official Channel" howu-index="35"></a>
+			<a target="_blank" href="https://www.instagram.com/hitachi" howu-index="34"><img src="/image/en/r1/common2/icon_sns_instagram.png" alt="Instagram Official Account" howu-index="33"></a>
+			<a target="_blank" href="https://www.linkedin.com/company/hitachi" howu-index="32"><img src="/image/en/r1/common2/icon_sns_linkedin.png" alt="LinkedIn Official Page" howu-index="31"></a>
+		</div>
+		<!--Optional Footer Item ref. Chapter 7.5. Optional Footer Item -->
+		<div id="Footer2Menu">
+			<a href="/ice/sitemap/index.html">Sitemap</a>
+			<a href="/ice/contact/index.html">Contact Us</a>
+		</div>
+		</div>
+	<!-- Footer -->
+	<div id="Footer1">
+		<!-- Hitachi Group Top Chapter 7.6. Hitachi Group Top -->
+		<div id="HitachiTop">
+			<a href="https://www.hitachi.com/" target="_blank">Hitachi Global Website</a><a href="https://www.hitachi.asia/" target="_blank">Hitachi in Asia</a>
+		</div>
+		<!-- Footer Item ref. 7.7. Footer Item -->
+		<div id="Footer1Menu">
+			<a href="/utility/terms/index.html">Terms of Use</a>
+    		<a href="/utility/privacy/index.html">Privacy Policy</a>
+			
+		</div>
+		<!-- Copyright ref. 7.8. Copyright -->
+		<div id="Copyright">&copy; Hitachi, Ltd. <span>1994</span>. All rights reserved.</div>
+	</div>
+	</div>
+</div>
+<!--/FooterArea-->
+
+</body>
+<!-- InstanceEnd -->
+
+<!--  Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44485218-1', 'hitachi.com.sg');
+  ga('send', 'pageview');
+
+</script>
+<!--  /Google Analytics -->
+
+</html>

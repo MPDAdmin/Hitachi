@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+	
+	<script language="JavaScript">
+	// Code for validating the form
+	// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+	// for details
+	var frmvalidator  = new Validator("contactform");
+	frmvalidator.addValidation("name","req","Please provide your name"); 
+	frmvalidator.addValidation("email","req","Please provide your email"); 
+	frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+	</script>
+	<!--
+	Sample code from:
+	http://www.html-form-guide.com/contact-form/php-email-contact-form.html
+	-->
+	
+</head>
+<body>
+    <h1>Contact</h1>
+    
+    <form method="post" name="contactform" action="contact.php">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required>
+        
+        <label for="email">email</label>
+        <input type="email" name="email" id="email" required>
+        
+        <label for="product">Product Interested *</label>
+        <input type="text" name="product" id="product" required>
+        
+        <label for="model">Product Model</label>
+        <textarea name="model" id="model" required></textarea>
+        
+        <br>
+        
+        <button>Send</button>
+    </form>
+    
+</body>
+</html>

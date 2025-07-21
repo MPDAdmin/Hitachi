@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+/* **************************************************
+
+Name: wide_layout.css
+
+Description: Setting of page layout
+
+Create: 2011.10.12
+Update: 8888.88.88
+
+Copyright 2011 Hitachi, Ltd. 
+
+***************************************************** */
+
+
+
+/* content===========================================
+
+[s1] Header
+[s2] Site identity
+[sn1] Global navigation
+[sn2] Horizontal local navigation
+[sn3] Topic Path
+[-] Content
+[sn4] Vertical local navigation
+[sn5] Footer
+
+===================================================== */
+
+/* [s1] Header Setting
+=========================================================================================== */
+
+div#Header {
+	width: 965px;
+}
+
+
+
+/* [s2] Site identity
+=========================================================================================== */
+
+/* ---[s2] Site identity > staging unit > top page--- */
+div#SiteIdentityL {
+	width: 965px;
+}
+div#SiteIdentityL h1.Title {
+	width: 809px;
+}
+
+/* ---[s2] Site identity > staging unit > normal page--- */
+div#SiteIdentityS {
+	width: 965px;
+}
+div#SiteIdentityS p.Title {
+	width: 853px;
+}
+
+
+
+/* [sn1] Global navigation
+=========================================================================================== */
+
+div#GlobalNavi {
+	width: 965px;
+}
+div#GlobalNavi div {
+	background: url("/image/h1_en/wide/wide_bg_g_navi_separater.gif") no-repeat 0 100%;
+}
+
+
+
+/* [sn2] Horizontal local navigation
+=========================================================================================== */
+
+ul#HorizontalLocalNavi {
+	background: url("/image/h1_en/wide/wide_bg_g_navi_bottom.gif") no-repeat 0 100%;
+}
+
+
+
+/* [sn3] Topic Path
+=========================================================================================== */
+
+div#TopicPath {
+	width: 950px;
+}
+
+
+
+/* [-] Content Setting
+=========================================================================================== */
+
+div#Contents {
+	width: 965px;
+}
+
+
+
+/* [sn4] Vertical local navigation
+=========================================================================================== */
+
+div.Grid1 div#VerticalLocalNavi h2 a {
+	background: url("/image/h1_en/wide/wide_bg_l_navi_top.gif") 0 100% no-repeat #d6d6d6;
+}
+div.Grid1 div#VerticalLocalNavi a {
+	width: 216px;
+}
+div.Grid1 div#VerticalLocalNavi ul ul a {
+	width: 205px;
+}
+div.Grid1 div#VerticalLocalNavi ul ul ul a {
+	width: 197px;
+	background: url("/image/h1_en/wide/wide_bg_l_navi_level3.gif") 0 0 no-repeat #dddddd;
+}
+
+
+
+/* [sn5] Footer
+=========================================================================================== */
+
+div#Footer {
+	width: 965px;
+}
+
+

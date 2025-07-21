@@ -1,0 +1,1290 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Hind);
+body {
+  font-family: Open Sans;
+  background-color: #fff;
+}
+
+.col {
+  background-color: #fff;
+  text-align: center;
+  /*padding: 10px 0px;*/
+}
+
+.message {
+  text-align: center;
+  font-size: 20px;
+}
+.message span {
+  background-color: #1D1F20;
+  font-family: Hind;
+  color: #92B38A;
+}
+
+.example .span_7_of_10 {
+  padding: 50px 0px;
+}
+.example .span_3_of_10 {
+  line-height: 3;
+}
+
+/* -------------------------= Responsive Grid System
+ * -------------------------------------------------------------------------------------------------- */
+/*= GROUPING  ======================================================================== */
+.gridrow:before,
+.gridrow:after {
+  content: "";
+  display: table;
+}
+
+.gridrow:after {
+  clear: both;
+}
+
+.gridrow {
+  clear: both;
+  padding: 0px;
+  margin: 0 auto;
+  zoom: 1;
+
+  /* For IE 6/7 (trigger hasLayout) */
+}
+
+/*= GRID COLUMN SETUP   =============================================================== */
+.col, .colmob {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
+}
+
+.colmob {
+  margin: 1% 0 1% 0%;
+}
+
+.colnomarg {
+  display: block;
+  float: left;
+  margin: 0 auto;
+}
+
+.col:first-child {
+  margin-left: 0;
+}
+
+/* all browsers except IE6 and lower */
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
+@media only screen and (max-width: 640px) {
+  .col {
+    margin: 1% 0 1% 0%;
+  }
+}
+/*= MAIN GRID CONTAINER SETUP   =============================================================== */
+.gridcontent, .gridcontent950, .gridcontent645, .gridcontent770, .gridcontent1100, .gridcontent1300 {
+  clear: both;
+  width: 70%;
+  /* 1000px / 1250px */
+  /*max-width: 960px;*/
+  margin: 0 auto;
+  padding: 1em 0px;
+  position: relative;
+}
+
+.gridcontent645 {
+  max-width: 645px;
+}
+
+.gridcontent950 {
+  max-width: 950px;
+}
+
+.gridcontent1100 {
+  max-width: 1100px;
+}
+
+.gridcontent1300 {
+  max-width: 1300px;
+}
+
+.gridcontent770 {
+  max-width: 770px;
+}
+
+.gridcontentnopad {
+  clear: both;
+  width: 80%;
+  /* 1000px / 1250px */
+  /*max-width: 960px;*/
+  margin: 0 auto;
+  /*padding: 1em 0px;*/
+  position: relative;
+}
+
+.fullgridcontent {
+  clear: both;
+  width: auto;
+  margin: 0 auto;
+  position: relative;
+}
+
+/*= GRID OF TWO   ======================================================================== */
+.span_2_of_2 {
+  width: 100%;
+}
+
+.span_1_of_2 {
+  width: 49.2%;
+}
+
+.span_1_of_2mob {
+  width: 48%;
+}
+
+.span_2_of_2mob {
+  width: 96%;
+}
+
+.span_1_of_2nomarg {
+  width: 50%;
+}
+
+.span_1_of_2land {
+  width: 45%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+@media only screen and (max-width: 640px) {
+  .span_2_of_2 {
+    width: 100%;
+  }
+
+  .span_1_of_2, .span_1_of_2nomarg {
+    width: 100%;
+  }
+}
+/*= GRID OF THREE   ======================================================================== */
+.span_3_of_3 {
+  width: 100%;
+}
+
+.span_2_of_3 {
+  width: 66.13%;
+}
+
+.span_1_of_3 {
+  width: 32.26%;
+}
+
+.span_2_of_3nomarg {
+  width: 66.66%;
+}
+
+.span_1_of_3nomarg {
+  width: 33.33%;
+}
+
+.span_1_of_3border {
+  width: 33%;
+}
+
+.span_1_of_3land {
+  width: 33.33%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+@media only screen and (max-width: 640px) {
+  .span_3_of_3 {
+    width: 100%;
+  }
+
+  .span_2_of_3, .span_2_of_3nomarg {
+    width: 100%;
+  }
+
+  .span_1_of_3, .span_1_of_3nomarg, .span_1_of_3border {
+    width: 100%;
+  }
+}
+/*= GRID OF FOUR   ============================================================================= */
+.span_4_of_4 {
+  width: 100%;
+}
+
+.span_3_of_4 {
+  width: 74.6%;
+}
+
+.span_2_of_4 {
+  width: 49.2%;
+}
+
+.span_1_of_4 {
+  width: 23.8%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+@media only screen and (max-width: 640px) {
+  .span_4_of_4 {
+    width: 100%;
+  }
+
+  .span_3_of_4 {
+    width: 100%;
+  }
+
+  .span_2_of_4 {
+    width: 100%;
+  }
+
+  .span_1_of_4 {
+    width: 100%;
+  }
+}
+/*= GRID OF FIVE   ======================================================================== */
+.span_5_of_5 {
+  width: 100%;
+}
+
+.span_4_of_5 {
+  width: 79.68%;
+}
+
+.span_3_of_5 {
+  width: 59.36%;
+}
+
+.span_2_of_5 {
+  width: 39.04%;
+}
+
+.span_1_of_5 {
+  width: 18.72%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+@media only screen and (max-width: 640px) {
+  .span_5_of_5 {
+    width: 100%;
+  }
+
+  .span_4_of_5 {
+    width: 100%;
+  }
+
+  .span_3_of_5 {
+    width: 100%;
+  }
+
+  .span_2_of_5 {
+    width: 100%;
+  }
+
+  .span_1_of_5 {
+    width: 100%;
+  }
+}
+/*= GRID OF SIX   ======================================================================== */
+.span_6_of_6 {
+  width: 100%;
+}
+
+.span_5_of_6 {
+  width: 83.06%;
+}
+
+.span_4_of_6 {
+  width: 66.13%;
+}
+
+.span_3_of_6 {
+  width: 49.2%;
+}
+
+.span_2_of_6 {
+  width: 32.26%;
+}
+
+.span_1_of_6 {
+  width: 15.33%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+@media only screen and (max-width: 640px) {
+  .span_6_of_6 {
+    width: 100%;
+  }
+
+  .span_5_of_6 {
+    width: 100%;
+  }
+
+  .span_4_of_6 {
+    width: 100%;
+  }
+
+  .span_3_of_6 {
+    width: 100%;
+  }
+
+  .span_2_of_6 {
+    width: 100%;
+  }
+
+  .span_1_of_6 {
+    width: 100%;
+  }
+}
+/*= GRID OF SEVEN   ======================================================================== */
+.span_7_of_7 {
+  width: 100%;
+}
+
+.span_6_of_7 {
+  width: 85.48%;
+}
+
+.span_5_of_7 {
+  width: 70.97%;
+}
+
+.span_4_of_7 {
+  width: 56.45%;
+}
+
+.span_3_of_7 {
+  width: 41.94%;
+}
+
+.span_2_of_7 {
+  width: 27.42%;
+}
+
+.span_1_of_7 {
+  width: 12.91%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 640px) {
+  .span_1_of_7, .span_2_of_7, .span_3_of_7, .span_4_of_7,
+  .span_5_of_7, .span_6_of_7, .span_7_of_7 {
+    width: 100%;
+  }
+}
+/*= GRID OF EIGHT   ======================================================================== */
+.span_8_of_8 {
+  width: 100%;
+}
+
+.span_7_of_8 {
+  width: 87.3%;
+}
+
+.span_6_of_8 {
+  width: 74.6%;
+}
+
+.span_5_of_8 {
+  width: 61.9%;
+}
+
+.span_4_of_8 {
+  width: 49.2%;
+}
+
+.span_3_of_8 {
+  width: 36.5%;
+}
+
+.span_2_of_8 {
+  width: 23.8%;
+}
+
+.span_1_of_8 {
+  width: 11.1%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+@media only screen and (max-width: 640px) {
+  .span_8_of_8 {
+    width: 100%;
+  }
+
+  .span_7_of_8 {
+    width: 100%;
+  }
+
+  .span_6_of_8 {
+    width: 100%;
+  }
+
+  .span_5_of_8 {
+    width: 100%;
+  }
+
+  .span_4_of_8 {
+    width: 100%;
+  }
+
+  .span_3_of_8 {
+    width: 100%;
+  }
+
+  .span_2_of_8 {
+    width: 100%;
+  }
+
+  .span_1_of_8 {
+    width: 100%;
+  }
+}
+/*= GRID OF NINE   ======================================================================== */
+.span_9_of_9 {
+  width: 100%;
+}
+
+.span_8_of_9 {
+  width: 88.71%;
+}
+
+.span_7_of_9 {
+  width: 77.42%;
+}
+
+.span_6_of_9 {
+  width: 66.13%;
+}
+
+.span_5_of_9 {
+  width: 54.84%;
+}
+
+.span_4_of_9 {
+  width: 43.55%;
+}
+
+.span_3_of_9 {
+  width: 32.26%;
+}
+
+.span_2_of_9 {
+  width: 20.97%;
+}
+
+.span_1_of_9 {
+  width: 9.688%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 640px) {
+  .span_1_of_9, .span_2_of_9, .span_3_of_9, .span_4_of_9,
+  .span_5_of_9, .span_6_of_9, .span_7_of_9, .span_8_of_9, .span_9_of_9 {
+    width: 100%;
+  }
+}
+/*= GRID OF TEN   ======================================================================== */
+.span_10_of_10 {
+  width: 100%;
+}
+
+.span_9_of_10 {
+  width: 89.84%;
+}
+
+.span_8_of_10 {
+  width: 79.68%;
+}
+
+.span_7_of_10 {
+  width: 69.52%;
+}
+
+.span_6_of_10 {
+  width: 59.36%;
+}
+
+.span_5_of_10 {
+  width: 49.2%;
+}
+
+.span_4_of_10 {
+  width: 39.04%;
+}
+
+.span_3_of_10 {
+  width: 28.88%;
+	height: 115px;
+}
+
+.span_2_of_10 {
+  width: 18.72%;
+}
+
+.span_1_of_10 {
+  width: 8.56%;
+}
+
+	
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+@media only screen and (max-width: 640px) {
+  .span_10_of_10 {
+    width: 100%;
+  }
+
+  .span_9_of_10 {
+    width: 100%;
+  }
+
+  .span_8_of_10 {
+    width: 100%;
+  }
+
+  .span_7_of_10 {
+    width: 100%;
+  }
+
+  .span_6_of_10 {
+    width: 100%;
+  }
+
+  .span_5_of_10 {
+    width: 100%;
+  }
+
+  .span_4_of_10 {
+    width: 100%;
+  }
+
+  .span_3_of_10 {
+    width: 100%;
+  }
+
+  .span_2_of_10 {
+    width: 100%;
+  }
+
+  .span_1_of_10 {
+    width: 100%;
+  }
+}
+/*= GRID OF ELEVEN   ======================================================================== */
+.span_11_of_11 {
+  width: 100%;
+}
+
+.span_10_of_11 {
+  width: 90.76%;
+}
+
+.span_9_of_11 {
+  width: 81.52%;
+}
+
+.span_8_of_11 {
+  width: 72.29%;
+}
+
+.span_7_of_11 {
+  width: 63.05%;
+}
+
+.span_6_of_11 {
+  width: 53.81%;
+}
+
+.span_5_of_11 {
+  width: 44.58%;
+}
+
+.span_4_of_11 {
+  width: 35.34%;
+}
+
+.span_3_of_11 {
+  width: 26.1%;
+}
+
+.span_2_of_11 {
+  width: 16.87%;
+}
+
+.span_1_of_11 {
+  width: 7.63%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+@media only screen and (max-width: 640px) {
+  .span_11_of_11 {
+    width: 100%;
+  }
+
+  .span_10_of_11 {
+    width: 100%;
+  }
+
+  .span_9_of_11 {
+    width: 100%;
+  }
+
+  .span_8_of_11 {
+    width: 100%;
+  }
+
+  .span_7_of_11 {
+    width: 100%;
+  }
+
+  .span_6_of_11 {
+    width: 100%;
+  }
+
+  .span_5_of_11 {
+    width: 100%;
+  }
+
+  .span_4_of_11 {
+    width: 100%;
+  }
+
+  .span_3_of_11 {
+    width: 100%;
+  }
+
+  .span_2_of_11 {
+    width: 100%;
+  }
+
+  .span_1_of_11 {
+    width: 100%;
+  }
+}
+/*= GRID OF TWELVE   ======================================================================== */
+.span_12_of_12 {
+  width: 100%;
+}
+
+.span_11_of_12 {
+  width: 91.53%;
+}
+
+.span_10_of_12 {
+  width: 83.06%;
+}
+
+.span_9_of_12 {
+  width: 74.6%;
+}
+
+.span_8_of_12 {
+  width: 66.13%;
+}
+
+.span_7_of_12 {
+  width: 57.66%;
+}
+
+.span_6_of_12 {
+  width: 49.2%;
+}
+
+.span_5_of_12 {
+  width: 40.73%;
+}
+
+.span_4_of_12 {
+  width: 32.26%;
+}
+
+.span_3_of_12 {
+  width: 23.8%;
+}
+
+.span_2_of_12 {
+  width: 15.33%;
+}
+
+.span_1_of_12 {
+  width: 6.86%;
+}
+
+
+
+
+  .span_11_of_12 {
+    width: 100%;
+  }
+
+  .span_10_of_12 {
+    width: 100%;
+  }
+
+  .span_9_of_12 {
+    width: 100%;
+  }
+
+  .span_8_of_12 {
+    width: 100%;
+  }
+
+  .span_7_of_12 {
+    width: 100%;
+  }
+
+  .span_6_of_12 {
+    width: 100%;
+  }
+
+  .span_5_of_12 {
+    width: 100%;
+  }
+
+  .span_4_of_12 {
+    width: 100%;
+  }
+
+  .span_3_of_12 {
+    width: 100%;
+  }
+
+  .span_2_of_12 {
+    width: 100%;
+  }
+
+  .span_1_of_12 {
+    width: 100%;
+  }
+}
+.hidden-tablet {
+  display: block;
+}
+
+.visible-tablet {
+  display: none;
+}
+
+.hidden-mobile {
+  display: block;
+}
+
+.visible-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 990px) {
+  .hidden-tablet {
+    display: none;
+  }
+
+  .visible-tablet {
+    display: block;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .hidden-mobile {
+    display: none;
+  }
+
+  .visible-mobile {
+    display: block;
+  }
+}
+
+
+/* Hover Effects */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:200);
+.snip1577 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 8px;
+ /* min-width: 230px;
+  max-width: 315px; */
+ width: 100%;
+  color: #fff;
+  text-align: left;
+  font-size: 16px;
+  background: #000;
+}
+
+.snip1577 *,
+.snip1577:before,
+.snip1577:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.snip1577 img {
+  max-width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
+}
+
+.snip1577:before,
+.snip1577:after {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  content: '';
+  background-color: #fff;
+  z-index: 1;
+  opacity: 0;
+}
+
+.snip1577:before {
+  width: 0;
+  height: 1px;
+}
+
+.snip1577:after {
+  height: 0;
+  width: 1px;
+}
+
+.snip1577 figcaption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 15px 20px;
+}
+
+.snip1577 h3,
+.snip1577 h4 {
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: normal;
+  opacity: 0;
+}
+
+.snip1577 h4 {
+  font-size: .8em;
+  text-transform: uppercase;
+}
+
+.snip1577 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.snip1577:hover img,
+.snip1577.hover img {
+  zoom: 1;
+  filter: alpha(opacity=20);
+  -webkit-opacity: 0.2;
+  opacity: 0.2;
+}
+
+.snip1577:hover:before,
+.snip1577.hover:before,
+.snip1577:hover:after,
+.snip1577.hover:after {
+  opacity: 1;
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+
+.snip1577:hover:before,
+.snip1577.hover:before {
+  width: 40px;
+}
+
+.snip1577:hover:after,
+.snip1577.hover:after {
+  height: 40px;
+}
+
+.snip1577:hover h3,
+.snip1577.hover h3,
+.snip1577:hover h4,
+.snip1577.hover h4 {
+  opacity: 1;
+}
+
+.snip1577:hover h3,
+.snip1577.hover h3 {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.snip1577:hover h4,
+.snip1577.hover h4 {
+  -webkit-transition-delay: 0.35s;
+  transition-delay: 0.35s;
+}
+
+/*Tabs CSS*/
+/*
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}*/
+
+/* html {
+  height: 100%;
+  background: #222;
+  padding: 50px;
+} */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.5);
+  /*max-width: 700px;*/
+  margin: 0 auto;
+  border-radius: 6px;
+  color: #999;
+  line-height: 1.8;
+ /* font-size: 13px;
+  padding: 40px; */
+}
+
+h1 {
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #444;
+  line-height: 1;
+}
+
+h1 a {
+  font-size: 13px;
+  color: #ff0025;
+  text-decoration: none;
+}
+
+a {
+  color: #ff0025;
+  text-decoration: none;
+}
+
+.tab {
+  margin-bottom: 30px;
+}
+
+.tab-nav {
+  border-bottom: 1px solid #eee;
+}
+.tab-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.tab-nav ul li {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+@media (min-width: 600px) {
+  .tab-nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+  }
+}
+.tab-nav ul li a {
+  font-size: 12px;
+  color: #999;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  line-height: 1;
+}
+.tab-nav ul li a:hover, .tab-nav ul li a:focus, .tab-nav ul li a:active {
+  outline: none;
+}
+.tab-nav ul li a:hover, .tab-nav ul li a:active {
+  color: #ff0025;
+}
+@media (min-width: 600px) {
+  .tab-nav ul li.active {
+    border-bottom: 2px solid #666;
+  }
+}
+.tab-nav ul li.active a {
+  color: #ff0025;
+}
+.tab-nav.no-collapse ul {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.tab-nav.no-collapse ul:hover {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.tab-nav.no-collapse ul:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+.tab-nav.no-collapse ul li {
+  display: inline-block !important;
+  margin-right: 20px;
+}
+.tab-nav.no-collapse ul li.active {
+  border-bottom: 2px solid #666 !important;
+}
+
+.tab-pane {
+  padding: 15px 0;
+  display: none;
+}
+.tab-pane h2 {
+  font-weight: 500;
+  color: #666;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 1.2;
+}
+.tab-pane p {
+  margin-top: 0;
+}
+.tab-pane.active {
+  display: block;
+}
+
+/* Responsive Table */
+/*body {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #3b3b3b;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  background: #2b2b2b;
+}*/
+
+/*@media screen and (max-width: 580px) {
+  body {
+    font-size: 14px;
+    line-height: 22px;
+	  
+  }
+}*/
+
+.twrapper {
+  margin: 0 auto;
+  /*padding: 40px;
+  max-width: 800px;*/
+}
+
+.rtable {
+  margin: 0 0 40px 0;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  display: table;
+}
+@media screen and (max-width: 580px) {
+  .rtable {
+    display: block;
+  }
+}
+
+.trow {
+  display: table-row;
+  background: #f6f6f6;
+}
+.trow:nth-of-type(odd) {
+  background: #e9e9e9;
+}
+.trow.header {
+  font-weight: 900;
+  color: #ffffff;
+  background: #ff0025;
+}
+.trow.green {
+  background: #27ae60;
+}
+.trow.blue {
+  background: #2980b9;
+}
+@media screen and (max-width: 580px) {
+  .trow {
+    padding: 14px 0 7px;
+    display: block;
+  }s
+  .trow.header {
+    padding: 0;
+    height: 6px;
+  }
+  .trow.header .cell {
+    display: none;
+  }
+  .trow .cell {
+    margin-bottom: 10px;
+  }
+  .trow .cell:before {
+    margin-bottom: 3px;
+    content: attr(data-title);
+    min-width: 98px;
+    font-size: 10px;
+    line-height: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #969696;
+    display: block;
+  }
+}
+
+.cell {
+  padding: 6px 12px;
+  display: table-cell;
+}
+@media screen and (max-width: 580px) {
+  .cell {
+    padding: 2px 16px;
+    display: block;
+  }
+}
+
+/* Grid Caption */
+
+.grid_txt_small{
+	font-size: 12px;
+	color: #fff;
+	padding: 10px;
+	text-align: left;
+	margin-top: 85px;
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 1400px) {
+  .grid_txt_small {
+    width: 100%;
+	  margin-top: 73px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .grid_txt_small {
+    width: 100%;
+	  margin-top: 70px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .grid_txt_small {
+    width: 100%;
+	  margin-top: 75px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .grid_txt_small {
+    width: 100%;
+	  margin-top: 55px;
+  }
+}
+
+
+.grid_txt_med{
+	font-size: 12px;
+	color: #fff;
+padding: 10px;
+	text-align: left;
+	margin-top: 150px;
+	font-weight: bold;
+
+}
+
+@media only screen and (max-width: 540px) {
+  .grid_txt_med {
+    width: 100%;
+	  margin-top: 126px;
+  }
+}
+
+.grid_txt_big{
+	font-size: 12px;
+	color: #fff;
+	padding: 10px;
+	text-align: left;
+	margin-top: 250px;
+	font-weight: bold;
+
+}
+
+/*grid caption test*/
+
+.grid_txt_test{
+	margin: 100px 0 5px;
+	padding: 0 0 10px 10px;
+	font-size: 16px;
+	color: #fff;
+	text-align: left;
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 960px) {
+  .grid_txt_test{
+	margin: 100px 0 5px;
+	padding: 0 0 10px 10px;
+	font-size: 12px;
+	color: #fff;
+	text-align: left;
+	font-weight: bold;
+}
+}
+
+.grid_txt_btmleft{
+	margin:  -40px 0 0 10px;
+	padding: 0 0 10px 10px;
+	font-size: 12px;
+	color: #fff;
+	font-weight: bold;
+	text-align: left;
+}
+
+@media only screen and (max-width: 640px) {
+ .grid_txt_btmleft{
+	margin:  -50px 0 0 10px;
+	padding: 0 0 10px 10px;
+	font-size: 12px;
+	color: #fff;
+	font-weight: bold;
+	text-align: left;
+}
+}
+
+.grid_txt_btmleft2{
+	margin:  -40px 0 0 10px;
+	padding: 0 0 10px 10px;
+	font-size: 12px;
+	color: #fff;
+	font-weight: bold;
+	text-align: left;
+}
+
+@media only screen and (max-width: 1300px) {
+ .grid_txt_btmleft2{
+	margin:  -45px 0 0 10px;
+	padding: 0 0 10px 10px;
+	font-size: 12px;
+	color: #fff;
+	font-weight: bold;
+	text-align: left;
+	line-height: 1.4;
+}
+}
+
+@media only screen and (max-width: 580px) {
+ .grid_txt_btmleft2{
+	margin:  -55px 0 0 10px;
+	padding: 0 0 10px 10px;
+	font-size: 12px;
+	color: #fff;
+	font-weight: bold;
+	text-align: left;
+	line-height: 1.4;
+}
+}

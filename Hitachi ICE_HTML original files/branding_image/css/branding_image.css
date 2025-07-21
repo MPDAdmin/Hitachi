@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+/* **************************************************
+
+Name: branding_image.css
+
+Description: Setting of branding image module
+
+Create: 2012.02.29
+Update: xxxx.xx.xx
+
+Copyright 2012 Hitachi, Ltd. 
+
+***************************************************** */
+
+
+
+/* Branding image
+=========================================================================================== */
+div#BrandingImgStyle1{
+margin: 0 0 20px;
+position: relative;
+z-index: 1;
+}
+
+.branding-image {
+	position:relative;
+}
+
+
+
+/* Slide
+=========================================================================================== */
+.branding-image .slide {
+}
+	.branding-image .slide a {
+		position:absolute;
+		display:none;
+		overflow:hidden;
+	}
+	.branding-image .slide img {
+		border:none;
+	}
+
+
+
+/* Controller
+=========================================================================================== */
+.branding-image .controller {
+	position:absolute;
+	margin:0;
+	padding:0;
+	list-style:none;
+	z-index:1;
+}
+#BrandingImgStyle1 {padding-bottom:0!important}
+
+/*--- Position ---*/
+	.branding-image .controller.rt {  /* �E�� */
+		right:2px;
+		top:2px;
+	}
+	.branding-image .controller.lb {  /* ���� */
+		left:2px;
+		bottom:2px;
+	}
+	.branding-image .controller.rb {  /* �E�� */
+	bottom: 10px;
+    right: 8px;
+	}
+
+/*--- Button ---*/
+	.branding-image .controller li {
+		float:left;
+		width:24px;
+		height:24px;
+		cursor:pointer;
+	}
+		.branding-image .controller.rt li,
+		.branding-image .controller.rb li {
+			margin-left:2px;
+		}
+		.branding-image .controller.lb li {
+			margin-right:2px;
+		}
+	.branding-image .controller a {
+		display:block;
+		height:24px;
+		overflow:hidden;
+	}
+	.branding-image .controller img {
+		border:none;
+	}
+
+
+/* eof. */
