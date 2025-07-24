@@ -238,8 +238,9 @@ h6 {
     line-height: 33px;
     font-weight: 600;
 }
-
-
+.section-m{
+    margin-bottom: 100px;
+}
 /* 3: Link Setting
 =========================================================================================== */
 
@@ -337,3 +338,8 @@ a:active {
   .col-md-12 { width: 100%; }
 }
 
+@media(max-width: 767px){
+    .section-m{
+        margin-bottom: 30px;
+    }
+}
