@@ -174,15 +174,7 @@ body.header1-fix.header1-show #HeaderArea1 {
     #HeaderArea1 > .Container #SupportNavi > a,
     #HeaderArea1 > .Container #SupportNavi > button > span {
         width: 45px;
-        height: 45px;
     }
-
-    #HeaderArea1 > .Container #SupportNavi > #SupportNaviSearch img {
-        width: 45px;
-        height: 90px;
-        display: block;
-    }
-
     #HeaderArea1 > .Container #SupportNavi > a:not(#SupportNaviSearch),
     #HeaderArea1 > .Container #SupportNavi > button:not(#SupportNaviSearch)  {
         display: none;
@@ -229,6 +221,7 @@ body.header1-fix.header1-show #HeaderArea1 {
     padding: 25px;
     background: #f4f4f4;
     opacity: 0.9;
+    border-radius: 5px;
 }
 #section-banner .banner-text h1{
     color: #222;
@@ -288,7 +281,6 @@ body.header1-fix.header1-show #HeaderArea1 {
     background-size: 15px 12px;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(../../../image/en/r1/common2/icon_checkmark.png);
 }
 
 #HeaderArea1.countrymenu-open {
@@ -1424,7 +1416,6 @@ body.menu-open #SpMenuModal {
     background-size: 15px 12px;
     background-repeat: no-repeat;
     background-position: 50px center;
-    background-image: url(../../../image/en/r1/common2/icon_checkmark.png);
 }
 
 #SpSupportNavi a::before,
@@ -2132,7 +2123,7 @@ body.menu-open #SpMenuModal {
 }
 .tabs .tab-menu li a:before{
     content: '';
-    height: 60%;
+    height: 50%;
     width: 3px;
     background-color: #000;
     position: absolute;
@@ -2174,6 +2165,10 @@ body.menu-open #SpMenuModal {
 .tabs .tab-content .tab-item .tab-item-action img{
     margin-left: 15px;
 }
+/* Article */
+.articles article{
+    margin-bottom: 15px;
+}
 .articles article .article-inner{
     background-color: #f4f4f4;
     border-radius: 5px;
@@ -2196,13 +2191,21 @@ body.menu-open #SpMenuModal {
     justify-content: space-between;
     height: 100%;
 }
-
+/* Article with icon box */
+.articles.icon-box .wrap-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 120px;
+}
 /*Tab style 2*/
 .tabs.style-2 .tab-menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 30px;
+    background: #D9D9D9;
+    border-radius: 5px;
 }
 .tabs.style-2 .tab-menu li a:before {
     content: none;
@@ -2210,6 +2213,17 @@ body.menu-open #SpMenuModal {
 .tabs.style-2 .tab-content {
     border-radius: 5px;
 }
+/*Tab style 3*/
+.tabs.style-3 .tab-content{
+    padding: 0;
+}
+.tabs.style-3 .tab-content h3{
+    font-weight: normal;
+} 
+.tabs.style-3 .tab-content .wrap-content{
+    padding: 20px 30px;
+}
+
 /*Slick slider
 =======================================================*/
 .slick-slider {
@@ -2533,4 +2547,37 @@ body.menu-open #SpMenuModal {
 }
 .copyrighter{
     margin-top: 30px;
+}
+@media(max-width: 767px){
+    .menu-footer .sub-menu li {
+        width: 100%;
+    }
+}
+/*Breadcrumb
+=========================================*/
+.breadcrumb{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.breadcrumb li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+}
+.breadcrumb a{
+    display: flex;
+    align-items: center;
+    color: #000;
+    padding: 10px 0;
+}
+.breadcrumb a:hover{
+    color: #CC0000;
+}
+.breadcrumb li img{
+    margin-left: 20px;
+}
+.breadcrumb li:first-child a{
+    color: #CC0000;
 }
