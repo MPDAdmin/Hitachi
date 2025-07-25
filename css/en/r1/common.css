@@ -13,77 +13,6 @@ Copyright 2014 Hitachi, Ltd.
 
 ***************************************************** */
 
-
-/* ==================================================
-
-Initial Setting
-[-] Base Setting
-[-] Body Setting
-[-] Link Setting
-
-Setting of page layout
-[-] Skip Link
-[s1] Header
-[s2] Site Identity Area
-[s3] Global Navigation System
-[s4] Horizontal Local Navigation Bar
-[s5] Breadcrumb Trail
-[-] Content Area
-[s6] Vertical Local Navigation Menu
-[s7] Footer
-[s9] Footer Banner
-
-Setting of grid layout
-[-] Grid
-[cc] Column
-
-Setting of content module
-[c1] Page Title
-[c2] Heading
-[c3] Text
-[c4] Promotional Copy
-[c5] Image
-[c6] Image + Text
-[c7] Bulleted List
-[c8] Numbered List
-[c9] Footnote
-[c10] Note
-[c11] Link List
-[c12] Button
-[c13] Icon Link
-[c14] Data Table
-[c15] Plug-in Download Description
-[c16] Box
-[c17] Emphasis
-[c18] Contents Navigation System
-[c19] Linear Navigation System
-[c20] Internal Link
-[c21] Page Top Link
-[c22] Panel Unit
-[c23] Feature Unit
-
-Setting of special page
-[t1] Homepage
-[t2] Branding Image
-[p1] Pop-up Windows
-[f1] Form Page
-
-Setting of bottom link layout
-[m1] Fat Menu Level1
-[m2] Fat Menu Level2
-[m3] Fat Menu Level3
-[m4] Fat Menu Level4
-
-===================================================== */
-
-
-
-/* ----------------------------------------------------------------------------------------
-
-Initial Setting
-
-------------------------------------------------------------------------------------------- */
-
 /* 1: Base Setting
 =========================================================================================== */
 
@@ -190,8 +119,6 @@ sup {
 	clear: both;
 }
 
-
-
 /* 2: Body Setting
 =========================================================================================== */
 
@@ -237,6 +164,12 @@ h6 {
     font-size: 22px;
     line-height: 33px;
     font-weight: 600;
+}
+.p-20{
+    font-size: 20px;
+}
+.p-18{
+    font-size: 18px;
 }
 .section-m{
     margin-bottom: 100px;

@@ -96,7 +96,16 @@ Copyright 2025 Hitachi, Ltd.
                 scrollTop: 0
             }, 700);
         });
-        
+        $(document).on('click', '.search-toggle a, .close-search', function (e) {
+            e.preventDefault();
+            $('.search-toggle a').toggleClass('active');
+            $('.search-wrap').slideToggle();
+        });
+        $(document).on('click', '.mega-menu a', function (e) {
+            e.preventDefault();
+            $(this).toggleClass('active');
+            $('.mega-menu-panel').toggleClass('active');
+        });
         
     });
     
