@@ -110,6 +110,11 @@ Name: common2.css
 }
 .header-menu>li.mega-menu>a img{
     margin-left: 10px;
+    transition: all 350ms;
+}
+.header-menu>li.mega-menu>a.active img,
+.header-menu>li.mega-menu>a:hover img{
+    transform: rotate(180deg);
 }
 .header-menu>li:not(.mega-menu)>a:hover{
     color: #CC0000;
