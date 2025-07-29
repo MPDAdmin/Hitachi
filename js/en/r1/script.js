@@ -65,6 +65,7 @@ Copyright 2025 Hitachi, Ltd.
             $slider.slick({
                 slidesToShow: 4,
                 slidesToScroll: 1,
+                infinite: false,
                 arrows: true,
                 dots: false,
                 adaptiveHeight: false,
@@ -76,6 +77,7 @@ Copyright 2025 Hitachi, Ltd.
                         settings: {
                             slidesToShow: 2,
                             slidesToScroll: 1,
+                            infinite: false
                         }
                     },
                     {
@@ -83,6 +85,7 @@ Copyright 2025 Hitachi, Ltd.
                         settings: {
                             slidesToShow: 1,
                             slidesToScroll: 1,
+                            infinite: false
                         }
                     }
                 ]
