@@ -41,8 +41,8 @@ Copyright 2025 Hitachi, Ltd.
 
             // Update counter
             function updateCounter(event, slick, currentSlide) {
-                var currentIndex = Math.floor((currentSlide ? currentSlide : 0) / slick.options.slidesToScroll) + 1;
-                var totalPages = Math.ceil(slick.slideCount / slick.options.slidesToScroll);
+                var currentIndex = (currentSlide ? currentSlide : 0) + 1;
+                var totalPages = slick.slideCount;
                 $counter.text(currentIndex + '/' + totalPages);
             }
 
@@ -64,7 +64,7 @@ Copyright 2025 Hitachi, Ltd.
 
             $slider.slick({
                 slidesToShow: 4,
-                slidesToScroll: 4,
+                slidesToScroll: 1,
                 arrows: true,
                 dots: false,
                 adaptiveHeight: false,
@@ -75,7 +75,7 @@ Copyright 2025 Hitachi, Ltd.
                         breakpoint: 1024,
                         settings: {
                             slidesToShow: 2,
-                            slidesToScroll: 2,
+                            slidesToScroll: 1,
                         }
                     },
                     {
@@ -106,7 +106,15 @@ Copyright 2025 Hitachi, Ltd.
             $(this).toggleClass('active');
             $('.mega-menu-panel').toggleClass('active');
         });
-        
+        $(document).on('click', '.mobile-menu-toggle', function (e) {
+            e.preventDefault();
+            $(this).toggleClass('active');
+            $('.mobile-menu').toggleClass('active');
+        });
+        $(document).on('click', '.mobile-menu li.has-chilrent > a, .mobile-menu li.has-chilrent > .sub-arrow', function (e) {
+            e.preventDefault();
+            $(this).parent().toggleClass('active');
+        });
     });
     
 })(jQuery);
