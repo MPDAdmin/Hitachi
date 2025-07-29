@@ -103,21 +103,34 @@ Name: common2.css
     justify-content: center;
     color: #222;
     padding: 0 20px;
+    transition: all 350ms;
 }
-.header-menu>li.mega-menu>a{
+.header-menu>li>a.active,
+.header-menu>li>a:hover{
     color: #fff;
     background: #CC0000;
 }
+.header-menu>li.mega-menu>a{
+    padding-right: 50px;
+    position: relative;
+}
 .header-menu>li.mega-menu>a img{
-    margin-left: 10px;
-    transition: all 350ms;
+    position: absolute;
+    right: 25px;
+    top: 28px;
+    transition: all 150ms;
+    opacity: 0;
 }
-.header-menu>li.mega-menu>a.active img,
-.header-menu>li.mega-menu>a:hover img{
-    transform: rotate(180deg);
+.header-menu>li.mega-menu>a img.close{
+    opacity: 1;
 }
-.header-menu>li:not(.mega-menu)>a:hover{
-    color: #CC0000;
+.header-menu>li.mega-menu>a.active img.close,
+.header-menu>li.mega-menu>a:hover img.close{
+    opacity: 0;
+}
+.header-menu>li.mega-menu>a.active img.open,
+.header-menu>li.mega-menu>a:hover img.open{
+    opacity: 1;
 }
 header{
     position: relative;
