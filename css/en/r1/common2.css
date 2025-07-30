@@ -275,7 +275,7 @@ header{
     font-size: 24px;
     font-weight: normal;
 }
-.articles article h3.title {
+.articles article .article-inner h3.title {
     font-weight: normal;
 }
 .articles article .title a:hover{
