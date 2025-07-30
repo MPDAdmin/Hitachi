@@ -31,6 +31,24 @@ Copyright 2025 Hitachi, Ltd.
             var tabId = $(this).attr('data').replace('tab-', 'item-');
             $(this).parents('.tabs').find('.tab-item[data="' + tabId + '"]').addClass('active');
         });
+        function equalizeTitleHeights() {
+            $('.articles').each(function () {
+                var maxHeight = 0;
+                var $titles = $(this).find('.wrap-content h3');
+
+                // Reset height để tính lại đúng
+                $titles.css('height', 'auto');
+
+                // Tìm chiều cao lớn nhất
+                $titles.each(function () {
+                    var h = $(this).outerHeight();
+                    if (h > maxHeight) maxHeight = h;
+                });
+
+                // Gán chiều cao tối đa cho tất cả
+                $titles.height(maxHeight);
+            });
+        }
         // Initialize all sliders
         $('.slider').each(function (index, element) {
             var $slider = $(element);
@@ -57,11 +75,12 @@ Copyright 2025 Hitachi, Ltd.
                 });
                 $slider.find('.slick-slide .article-inner').height(maxHeight);
             }
-
+            
             // Initialize Slick slider
             $slider.on('init reInit afterChange', updateCounter);
             $slider.on('setPosition', function () {
                 equalizeSlideHeights();
+                equalizeTitleHeights();
             });
 
             $slider.slick({
@@ -93,7 +112,7 @@ Copyright 2025 Hitachi, Ltd.
                 ]
             });
         });
-
+        equalizeTitleHeights();
         //Back to top
         $(document).on('click', '#back-to-top', function (e) {
             e.preventDefault();
