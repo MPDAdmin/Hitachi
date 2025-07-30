@@ -43,7 +43,9 @@ Copyright 2025 Hitachi, Ltd.
             function updateCounter(event, slick, currentSlide) {
                 var currentIndex = (currentSlide ? currentSlide : 0) + 1;
                 var totalPages = slick.slideCount;
-                $counter.text(currentIndex + '/' + totalPages);
+                var slidesToShow = slick.options.slidesToShow;
+                var totalDisplay = (totalPages + 1) - slidesToShow;
+                $counter.text(currentIndex + '/' + totalDisplay);
             }
 
             // Equalize heights of slides in this slider
