@@ -207,11 +207,9 @@ header{
     padding: 0;
 }
 .tabs .tab-menu li{
-    flex:1;
     list-style: none;
 }
 .tabs .tab-menu li a{
-    text-align:center;
     color: #000;
     padding: 8px 25px;
     position: relative;
