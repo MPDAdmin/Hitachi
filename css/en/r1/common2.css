@@ -211,7 +211,7 @@ header{
 }
 .tabs .tab-menu li a{
     color: #000;
-    padding: 8px 25px;
+    padding: 8px 30px;
     position: relative;
     border-radius: 5px;
 }
@@ -308,6 +308,18 @@ header{
     content: none;
 }
 .tabs.style-2 .tab-content {
+    border-radius: 5px;
+}
+
+.tabs.style-2 .tab-menu li{
+    flex:1;
+    list-style: none;
+}
+.tabs.style-2 .tab-menu li a{
+    text-align:center;
+    color: #000;
+    padding: 8px 25px;
+    position: relative;
     border-radius: 5px;
 }
 /*Tab style 3*/
