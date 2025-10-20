@@ -139,6 +139,20 @@ Copyright 2025 Hitachi, Ltd.
             e.preventDefault();
             $(this).parent().toggleClass('active');
         });
+        //Sticky header
+        var header = $("header");
+        var sticky = 0;
+        if ($(window).width() >= 1025) {
+            sticky = $("header .header-top").offset().top + $("header .header-top").height();
+        }
+        $(window).scroll(function() {
+            if (window.pageYOffset > sticky) {
+                header.addClass("sticky-effects");
+            } else {
+                header.removeClass("sticky-effects");
+            }
+        });
+        console.log(sticky);
     });
     
 })(jQuery);

@@ -7,6 +7,7 @@ Name: common2.css
 ***************************************************** */
 /*Header
 ===================================================*/
+
 .header-top .logo{
     height: 45px;
     display: flex;
@@ -41,17 +42,27 @@ Name: common2.css
 .search-wrap{
     background: #f4f4f4;
 }
-.search-wrap form{
-    margin: 0 auto;
-    padding: 40px 0 25px 0;
+.search-wrap-inner{
+    position: relative;
     max-width: 90%;
     width: 900px;
+    margin: 0 auto;
+}
+.search-wrap form{
+    margin: 0 auto;
+    padding: 8px 0;
     display: flex;
     align-items: center;
     position: relative;
 }
+.search-wrap .close-search{
+    display: block;
+    text-align: right;
+    padding-top: 20px;
+    cursor: pointer;
+}
 .search-wrap form input{
-    width: calc(100% - 200px);
+    width: 100%;
     height: 38px;
     background: #fff;
     border: none !important;
@@ -59,19 +70,22 @@ Name: common2.css
     padding: 0 10px;
 }
 .search-wrap form .SearchBtn{
-    width: 200px;
     height: 38px;
     background: #CC0000;
     color: #fff;
     border: none;
     cursor: pointer;
+    padding: 0 15px;
 }
 .search-wrap form .close-search{
     position: absolute;
-    top: 15px;
+    top: 10px;
     right: 0;
     z-index: 1;
     cursor: pointer;
+    font-size: 18px;
+    color: #666;
+    font-weight: 600;
 }
 .search-wrap form .close-search:hover{
     color: #CC0000;
@@ -678,7 +692,7 @@ header{
     width: 50%;
 }
 .footer-bottom{
-    padding: 30px 0;
+    padding: 40px 0 30px 0;
 }
 .socials{
     padding: 0;
@@ -705,17 +719,14 @@ header{
     margin-left: 25px;
 }
 .menu-bottom-footer a{
-    display: flex;
-    align-items: center;
     color: #000;
-    padding: 10px 0;
     font-size: 14px;
 }
 .menu-bottom-footer a:hover{
     color: #CC0000;
 }
 .copyrighter{
-    margin-top: 30px;
+    margin-top: 40px;
 }
 @media(max-width: 767px){
     .menu-footer .sub-menu li {
@@ -761,8 +772,13 @@ header{
     max-height: calc(100vh - 45px);
     overflow-y: auto;
 }
-.mobile-menu.active{
+.mobile-menu.active {
     display: block;
+    position: fixed;
+    top: 45px;
+    left: 0;
+    z-index: 999;
+    width: 100%;
 }
 .mobile-menu ul.menu{
     padding: 0;
@@ -779,6 +795,12 @@ header{
 }
 .mobile-menu ul.menu li a{
     color: #222;
+}
+.mobile-menu ul.menu li a .menu-arrow-right{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%) rotate(-90deg);
 }
 .mobile-menu ul.menu li .sub-arrow{
     width: 20px;
@@ -841,13 +863,28 @@ header{
     right: 5px;
     z-index: 1;
 }
+.links-title{
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #4d4d4d;
+    height: 52px;
+    margin-top: 20px;
+}
 @media(max-width: 1024px){
     .mega-menu-panel,
     .header-top .header-action .languages,
     .header-top .header-action .contact,
-    .header-top .header-action .search-toggle span,
-    .header-bottom{
+    .header-top .header-action .search-toggle span{
         display: none;
+    }
+    .header-bottom .col-6:last-child{
+        display: none;
+    }
+    .header-bottom .col-6:first-child{
+        width: 100%;
     }
     li.mobile-menu-toggle{
         display: flex;
@@ -877,12 +914,71 @@ header{
     .breadcrumb{
         padding: 10px 0;
     }
-    .header-top{
-        border-bottom: 1px solid #f4f4f4;
+    .socials{
+        margin-bottom: 15px;
+    }
+    .menu-bottom-footer,
+    .socials{
+        justify-content: center;
+    }
+    .socials li,
+    .menu-bottom-footer li{
+        margin: 0 12px;
+    }
+    .copyrighter .col-12:first-child{
+        order: 2;
+    }
+    .copyrighter .copyright{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .copyrighter .menu-bottom-footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap: .8125rem;
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        -webkit-box-pack: center;
+    }
+    .copyrighter .menu-bottom-footer li{
+        margin: 0;
+    }
+    .copyrighter .menu-bottom-footer li:nth-child(odd){
+        text-align: right;
+    }
+    .copyrighter .menu-bottom-footer li a{
+        padding: 0;
+    }
+    .copyrighter{
+        margin-top: 25px;
+    }
+    .sticky-effects .header-top{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        background: #fff;
+    }
+    .search-wrap{
+        position: fixed;
+        top: 45px;
+        left: 0;
+        width: 100%;
+        z-index: 999;
     }
 }
 @media(min-width: 1025px){
+    .global-links-title,
     .mobile-menu.active {
         display: none;
+    }
+    .sticky-effects .header-bottom{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
     }
 }
