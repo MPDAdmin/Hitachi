@@ -150,8 +150,8 @@ header{
     position: relative;
 }
 .mega-menu-panel{
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 105px;
     left: 0;
     z-index: 9;
     opacity: 0;
@@ -163,6 +163,9 @@ header{
 .mega-menu-panel.active{
     opacity: 1;
     visibility: visible;
+}
+.sticky-effects .mega-menu-panel.active{
+    top: 60px;
 }
 .mega-menu-panel .tab-content a{
     font-weight: bold;
@@ -272,6 +275,9 @@ header{
 }
 .tabs .tab-content .tab-item .tab-item-action img{
     margin-left: 15px;
+}
+.mb-toggle-tab{
+    display: none;
 }
 /* Article */
 .articles article{
@@ -968,6 +974,64 @@ header{
         width: 100%;
         z-index: 999;
     }
+    .mb-toggle-tab{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #CC0000;
+        color: #fff;
+        border-radius: 5px;
+        padding: 16px;
+    }
+    .mb-toggle-tab .icon{
+        background: #fff;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        
+    }
+    .mb-toggle-tab .icon img{
+        width: 14px;
+        transition: all 350ms;
+    }
+    .mb-toggle-tab-wraper{
+        position: relative;
+        margin-bottom: 15px;
+    }
+    .mb-toggle-tab-wraper .tab-menu{
+        position: absolute;
+        top: calc(100% + 5px);
+        left: 0;
+        width: calc(100% - 20px);
+        z-index: 1;
+        background: #fff !important;
+        opacity: 0;
+        visibility: hidden;
+        border: 1px solid #b3b3b3;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    .mb-toggle-tab-wraper.active .tab-menu{
+        opacity: 1;
+        visibility: visible;
+    }
+    .mb-toggle-tab-wraper .tab-menu li{
+        width: 100%;
+        flex: none !important;
+    }
+    .mb-toggle-tab-wraper .tab-menu li a{
+        padding: 8px 20px !important;
+        text-align: left !important;
+    }
+    .mb-toggle-tab-wraper .tab-menu li a.active {
+        background-color: #000;
+    }
+    .mb-toggle-tab-wraper.active .mb-toggle-tab .icon img{
+        transform: rotate(-180deg);
+    }
 }
 @media(min-width: 1025px){
     .global-links-title,
@@ -980,5 +1044,6 @@ header{
         left: 0;
         width: 100%;
         z-index: 999;
+        
     }
 }

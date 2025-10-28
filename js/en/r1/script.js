@@ -30,6 +30,24 @@ Copyright 2025 Hitachi, Ltd.
             $(this).addClass('active');
             var tabId = $(this).attr('data').replace('tab-', 'item-');
             $(this).parents('.tabs').find('.tab-item[data="' + tabId + '"]').addClass('active');
+            $(this).parents('.tabs').find('.text').text($(this).text());
+            $(this).parents('.tabs').find('.mb-toggle-tab-wraper').removeClass('active');
+        });
+        if ($('.tabs')[0]) {
+            $('.tabs').each(function () {
+                let tab_heading = $(this).find('a.active').text();
+                let toggle = `
+                    <div class="mb-toggle-tab">
+                        <span class="text">${tab_heading}</span>
+                        <span class="icon"><img src="images/global/arrow-red-down.png"></span>
+                    </div>`;
+                $(this).find('.tab-menu').wrap('<div class="mb-toggle-tab-wraper"></div>');
+                $(this).find('.mb-toggle-tab-wraper').prepend(toggle);
+            });
+        }
+        $('.mb-toggle-tab').on('click', function(e) {
+            e.preventDefault();
+            $(this).parent().toggleClass('active');
         });
         function equalizeTitleHeights() {
             $('.articles').each(function () {
@@ -151,8 +169,7 @@ Copyright 2025 Hitachi, Ltd.
             } else {
                 header.removeClass("sticky-effects");
             }
-        });
-        console.log(sticky);
+        }); 
     });
     
 })(jQuery);
