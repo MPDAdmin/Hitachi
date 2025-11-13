@@ -1032,6 +1032,10 @@ header{
     .mb-toggle-tab-wraper.active .mb-toggle-tab .icon img{
         transform: rotate(-180deg);
     }
+    #footer-top{
+        margin-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 @media(min-width: 1025px){
     .global-links-title,
