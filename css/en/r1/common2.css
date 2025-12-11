@@ -220,8 +220,12 @@ header {
 }
 
 #section-banner .banner-text {
-  padding: 25px;
-  border-radius: 5px;
+  border: 0.0625rem solid var(--color-supportive-grey-4);
+  border-radius: 0.5rem;
+  max-width: 36.6875rem;
+  opacity: 0.9;
+  padding: 1.5rem;
+  width: 100%;
 }
 #section-banner .banner-text h1 {
   color: #222;
