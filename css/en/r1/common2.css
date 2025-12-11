@@ -206,7 +206,6 @@ header {
   padding: 200px 0 35px 0;
 }
 .banner-text-container {
-  max-width: 620px;
   -webkit-box-ordinal-group: 2;
   -ms-flex-order: 1;
   backdrop-filter: blur(20px) brightness(0.5);
@@ -217,15 +216,15 @@ header {
   float: none;
   order: 1;
   padding: 1rem 1rem 1.5rem;
-}
-
-#section-banner .banner-text {
   border: 0.0625rem solid var(--color-supportive-grey-4);
   border-radius: 0.5rem;
   max-width: 36.6875rem;
   opacity: 0.9;
   padding: 1.5rem;
   width: 100%;
+}
+
+#section-banner .banner-text {
 }
 #section-banner .banner-text h1 {
   color: #222;
