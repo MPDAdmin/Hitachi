@@ -195,7 +195,11 @@ header {
 /* Home Banner
 ============================================================================================ */
 .hero-container {
-  width: 1200px;
+  width: 1300px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 #section-banner {
@@ -218,7 +222,6 @@ header {
 
 #section-banner .banner-text {
   padding: 25px;
-  background: #f4f4f4;
   border-radius: 5px;
 }
 #section-banner .banner-text h1 {
