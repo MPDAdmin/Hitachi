@@ -215,7 +215,6 @@ header {
     padding-box;
   border: 0;
   float: none;
-  max-width: 100%;
   order: 1;
   padding: 1rem 1rem 1.5rem;
 }
