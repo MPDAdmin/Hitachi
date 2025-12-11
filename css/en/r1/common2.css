@@ -245,6 +245,11 @@ header {
   height: 44px;
   line-height: 44px;
 }
+
+#section-banner .banner-text a:hover {
+  background-color: var(--color-black);
+}
+
 #section-banner .banner-text a img {
   margin-left: 20px;
   margin-top: 15px;
