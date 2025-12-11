@@ -1,5 +1,17 @@
 @charset "UTF-8";
 
+:root {
+  --primary-color: #c00;
+  --brand-color: #fa000f;
+  --color-white: #fff;
+  --color-black: #0c0c0c;
+  --color-supportive-grey-1: #f4f4f4;
+  --color-supportive-grey-2: #d9d9d9;
+  --color-supportive-grey-3: #b3b3b3;
+  --color-supportive-grey-4: #737373;
+  --color-supportive-grey-5: #4d4d4d;
+}
+
 /* **************************************************
 
 Name: common2.css
@@ -187,6 +199,10 @@ header {
 }
 #section-banner .banner-text {
   max-width: 620px;
+  /* padding: 25px;
+  background: #f4f4f4;
+  opacity: 0.9;
+  border-radius: 5px;*/
   -webkit-box-ordinal-group: 2;
   -ms-flex-order: 1;
   backdrop-filter: blur(20px) brightness(0.5);
