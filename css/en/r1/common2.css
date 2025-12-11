@@ -197,12 +197,8 @@ header {
 #section-banner {
   padding: 200px 0 35px 0;
 }
-#section-banner .banner-text {
+.banner-text-container {
   max-width: 620px;
-  /* padding: 25px;
-  background: #f4f4f4;
-  opacity: 0.9;
-  border-radius: 5px;*/
   -webkit-box-ordinal-group: 2;
   -ms-flex-order: 1;
   backdrop-filter: blur(20px) brightness(0.5);
@@ -214,6 +210,12 @@ header {
   max-width: 100%;
   order: 1;
   padding: 1rem 1rem 1.5rem;
+}
+
+#section-banner .banner-text {
+  padding: 25px;
+  background: #f4f4f4;
+  border-radius: 5px;
 }
 #section-banner .banner-text h1 {
   color: #222;
