@@ -1,17 +1,5 @@
 @charset "UTF-8";
 
-:root {
-  --primary-color: #c00;
-  --brand-color: #fa000f;
-  --color-white: #fff;
-  --color-black: #0c0c0c;
-  --color-supportive-grey-1: #f4f4f4;
-  --color-supportive-grey-2: #d9d9d9;
-  --color-supportive-grey-3: #b3b3b3;
-  --color-supportive-grey-4: #737373;
-  --color-supportive-grey-5: #4d4d4d;
-}
-
 /* **************************************************
 
 Name: common2.css
@@ -194,37 +182,15 @@ header {
 }
 /* Home Banner
 ============================================================================================ */
-.hero-container {
-  width: 1300px;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
-
 #section-banner {
   padding: 200px 0 35px 0;
 }
-.banner-text-container {
-  -webkit-box-ordinal-group: 2;
-  -ms-flex-order: 1;
-  backdrop-filter: blur(20px) brightness(0.5);
-  background: transparent
-    linear-gradient(27deg, var(--primary-color) -110%, #fff 25%) 0 0 no-repeat
-    padding-box;
-  border: 0;
-  float: none;
-  order: 1;
-  padding: 1rem 1rem 1.5rem;
-  border: 0.0625rem solid var(--color-supportive-grey-4);
-  border-radius: 0.5rem;
-  max-width: 36.6875rem;
-  opacity: 0.9;
-  padding: 1.5rem;
-  width: 100%;
-}
-
 #section-banner .banner-text {
+  max-width: 620px;
+  padding: 25px;
+  background: #f4f4f4;
+  opacity: 0.9;
+  border-radius: 5px;
 }
 #section-banner .banner-text h1 {
   color: #222;
@@ -245,11 +211,6 @@ header {
   height: 44px;
   line-height: 44px;
 }
-
-#section-banner .banner-text a:hover {
-  background-color: var(--color-black);
-}
-
 #section-banner .banner-text a img {
   margin-left: 20px;
   margin-top: 15px;
@@ -1087,26 +1048,4 @@ header {
     width: 100%;
     z-index: 999;
   }
-}
-
-.button .cmp-button:active,
-.button .cmp-button:focus {
-  background-color: var(--color-supportive-grey-2);
-  border: 2px solid #0c0c0c;
-  color: #0c0c0c;
-}
-.button .cmp-button:hover {
-  background-color: #0c0c0c;
-  color: #fff;
-}
-.button .cmp-button:active {
-  background-color: var(--color-supportive-grey-3);
-  border: 2px solid #0c0c0c;
-  color: #0c0c0c;
-}
-.button .cmp-button {
-  background-color: var(--primary-color);
-  border: 2px solid transparent;
-  color: #fff;
-  gap: 0.5rem;
 }
