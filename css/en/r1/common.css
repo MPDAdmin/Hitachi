@@ -358,7 +358,8 @@ a:active {
 /* ====== Desktop (≥1024px) ====== */
 @media (min-width: 1024px) {
   .Container {
-    max-width: 1275px;
+    /* max-width: 1275px; */
+    max-width: 82.8125rem;
   }
 
   .col-md-1 {

@@ -20,6 +20,14 @@ Name: common2.css
 /*Header
 ===================================================*/
 
+img.logo {
+  display: block;
+  height: auto;
+  margin-bottom: 0.75rem;
+  margin-top: 0.8125rem;
+  width: 7.1875rem;
+}
+
 .header-top .logo {
   height: 45px;
   display: flex;
